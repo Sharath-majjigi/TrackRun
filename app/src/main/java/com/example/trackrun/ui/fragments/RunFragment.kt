@@ -37,7 +37,7 @@ class RunFragment : Fragment(R.layout.fragment_run) , EasyPermissions.Permission
         if(Build.VERSION.SDK_INT < Build.VERSION_CODES.Q){
             EasyPermissions.requestPermissions(
                   this,
-                  "Hey You need Location Permissions to use this app :)",
+                  "Hey You need Location Permissions to use this app !",
                   REQUEST_CODE_LOCATION_PERMISSION,
                   Manifest.permission.ACCESS_FINE_LOCATION,
                   Manifest.permission.ACCESS_COARSE_LOCATION
@@ -45,7 +45,7 @@ class RunFragment : Fragment(R.layout.fragment_run) , EasyPermissions.Permission
         }else{
             EasyPermissions.requestPermissions(
                     this,
-                    "Hey You need Location Permissions to use this app :)",
+                    "Hey You need Location Permissions to use this app !",
                     REQUEST_CODE_LOCATION_PERMISSION,
                     Manifest.permission.ACCESS_FINE_LOCATION,
                     Manifest.permission.ACCESS_COARSE_LOCATION,
